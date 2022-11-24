@@ -12,7 +12,7 @@ PROCEDURE book_fine(roll_no VARCHAR,Name_Book VARCHAR) IS
 BEGIN
     SELECT Date_of_Issue into ldate FROM Borrower WHERE roll_no=Roll_no AND Name_Book=Name_of_Book;
         day:=DATEDIFF(CURDATE(),ldate);
-    IF(day>=15 AND dat<=30) THEN
+    IF(day>=15 AND day<=30) THEN
         fine := day*5;
     ELSIF(day>30) THEN
         fine := day*50;
