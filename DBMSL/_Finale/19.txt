@@ -14,7 +14,7 @@ CREATE TRIGGER check_changes
 AFTER UPDATE OR DELETE ON library
 FOR EACH ROW
 BEGIN
-INSERT INTO library_audit VALUES (:old.author, :old.title);
+INSERT INTO library_audit VALUES (:new.author, :new.title);
 END;
 /
 
