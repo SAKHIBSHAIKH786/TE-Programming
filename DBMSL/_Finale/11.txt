@@ -71,7 +71,7 @@ db.employee.findAndModify({query:{Designation:"Tester",Company:"TCS",Age:25},
 
 #Q3. Selects all documents in the collection where the field age has a value less than 
 30 or the value of the salary field is greater than 40000.
-db.employee.find({$ord:[{Age:{$lt:30}},{Salary:{$gt:40000}}]}).pretty()
+db.employee.find({$or:[{Age:{$lt:30}},{Salary:{$gt:40000}}]}).pretty()
 
 
 #Q4. Finds all documents with Company_name: "TCS" and modifies their salary field by 2000.
