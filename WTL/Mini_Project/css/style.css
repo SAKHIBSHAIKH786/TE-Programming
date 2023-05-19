@@ -1,31 +1,80 @@
-/* Add a black background color to the top navigation */
-.topnav {
+/* Add a black background color to the home-top navigation */
+.home-topnav {
   background-color: black;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.home-topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: fantasy;
+    
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
+.home-topnav a:hover {
+  background-color: snow;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
+.home-topnav a.active {
+  background-color: orangered;
   color: white;
 }
 
-.top-logo img {
-    display: block;margin-left: auto;margin-right: auto;
+.about-topnav {
+  background-color: black;
+  overflow: hidden;
 }
+
+.about-topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: fantasy;
+    
+}
+
+.about-topnav a:hover {
+  background-color: snow;
+  color: black;
+}
+
+.about-topnav a.active {
+  background-color: orangered;
+  color: white;
+}
+
+.home-top-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-top-logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.all-foot footer{
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 97%;
+      height: 25px;
+}
+
+
