@@ -1,0 +1,20 @@
+public class Demo2 {
+  public void UpdateOlderAccount(String Name) {
+    List<Account> oldAccounts = new List<Account>()'
+    for(Account acc: [SELECT Name from Account WHERE Phone='123456']) {
+      acc.Name = Name;
+      oldAccounts.add(acc);
+      System.debug('Account updated: '+ acc.name);
+    }
+    update oldAccounts;
+  }
+}
+
+--------------------------------------------------------------------------------------
+
+Type the following in Debug Anonymous window
+
+Demo2 acc = new Demo2();
+acc.UpdateOlderAccount('Naik');
+
+--------------------------------------------------------------------------------------
