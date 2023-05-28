@@ -3,11 +3,11 @@ public class CreateAccount
     public String name {get; set;}
     public String phoneNumber {get; set;}
     public String selectedname {get; set;}
- 	public String websiteURL {get; set;}
+    public String websiteURL {get; set;}
     public List<Selectoption> lstnamesel {get; set;}
     
     public CreateAccount(ApexPages.StandardController controller) {
-		lstnamesel = new List<selectoption>();
+	lstnamesel = new List<selectoption>();
         lstnamesel.add(new selectOption('','- None -'));
         lstnamesel.add(new selectOption('IT','IT'));
         lstnamesel.add(new selectOption('MECH','MECH'));
@@ -22,6 +22,7 @@ public class CreateAccount
                                                 Phone = phoneNumber,
                                                 Industry = selectedname,
                                                 Website = websiteURL);
+						
             INSERT accountRecord;
             PageReference pg = new PageReference('/'+accountRecord.Id);
             pg.setRedirect(true);
