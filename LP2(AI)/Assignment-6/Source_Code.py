@@ -58,7 +58,15 @@ Food_Poisoning = ['nausea', 'vomiting', 'weakness', 'loss of appetite', 'aching 
 
 engine = Patient()
 engine.reset()
-random_choice = choice([Allergies, Asthma, Head_Tumor, Chronic_Pain, Dehydration, Food_Poisoning])
-print("\nSelected Disease is {}\n".format(random_choice))
+#random_choice = choice([Allergies, Asthma, Head_Tumor, Chronic_Pain, Dehydration, Food_Poisoning])
+symps = []
+count_symps = int(input("How many symptoms you have: "))
+
+for i in range(count_symps):
+	get_symps = input("Enter symptom: ")
+	symps.append(get_symps.lower())
+
+#print("\nSelected Symptoms are is {}\n".format(random_choice))
+print("According to your symptoms you have: ")
 engine.declare(Disease(symptoms=random_choice))
 engine.run()
