@@ -1,11 +1,11 @@
 public class Demo1 {
-  public void CreateAccount(String Name, String Phone) {
-    account acc = new account();
-    acc.Name = Name;
-    acc.Phone = Phone;
-    insert acc;
-    System.debug('Account inserted: '+ acc.name);
-  }
+    public void CreateAccount(String Name, String Phone) {
+        account acc = new account();
+        acc.Name = Name;
+        acc.Phone = Phone;
+        insert acc;
+        System.debug('Inserted account: '+ acc.Name);
+    }
 }
 
 ---------------------------------------------------------------------------------------
