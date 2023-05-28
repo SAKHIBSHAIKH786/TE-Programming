@@ -68,5 +68,5 @@ for i in range(count_symps):
 
 #print("\nSelected Symptoms are is {}\n".format(random_choice))
 print("According to your symptoms you have: ")
-engine.declare(Disease(symptoms=random_choice))
+engine.declare(Disease(symptoms=symps))
 engine.run()
