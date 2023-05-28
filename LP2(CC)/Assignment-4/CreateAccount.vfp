@@ -19,6 +19,7 @@
 <apex:commandButton action="{!cancelAccount}" value="Cancel"/>
 </apex:pageBlockButtons>
 </apex:pageBlock>
+
 <!-- ACTION FUNCTIONS-->
 <apex:actionFunction name="createFunction" action="{!createAccount}"/>
 <apex:actionFunction name="cancelFunction" action="{!cancelAccount}"/>
