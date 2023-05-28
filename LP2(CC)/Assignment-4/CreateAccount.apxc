@@ -30,8 +30,7 @@ public class CreateAccount
  } 
  else 
  {
- ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Please 
-enter Account Name'));
+ ApexPages.addmessage(new ApexPages.message(ApexPages.severity.CONFIRM,'Please enter Account Name'));
  }
  return NULL;
  }
