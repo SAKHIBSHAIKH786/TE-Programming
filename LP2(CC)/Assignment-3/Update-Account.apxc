@@ -12,7 +12,7 @@ public class Demo2 {
 
 --------------------------------------------------------------------------------------
 
-Type the following in Debug Anonymous window
+Type the following in Debug Anonymous Window
 
 Demo2 acc = new Demo2();
 acc.UpdateOlderAccount('Naik');
