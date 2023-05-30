@@ -6,8 +6,8 @@ def bfs(visited, graph, node):
     queue.append(node)
     
     while queue:
-    m = queue.pop(0) 
-    print (m, end = " ") 
+        m = queue.pop(0) 
+        print (m, end = " ") 
 
     for neighbour in graph[m]:
         if neighbour not in visited:
