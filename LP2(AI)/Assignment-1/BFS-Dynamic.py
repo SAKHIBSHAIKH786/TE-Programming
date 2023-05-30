@@ -9,10 +9,10 @@ def bfs(visited, graph, node):
         m = queue.pop(0) 
         print (m, end = " ") 
 
-    for neighbour in graph[m]:
-        if neighbour not in visited:
-        visited.append(neighbour)
-        queue.append(neighbour)
+        for neighbour in graph[m]:
+            if neighbour not in visited:
+            visited.append(neighbour)
+            queue.append(neighbour)
 
 
 user_size = int(input("How many nodes: "))
