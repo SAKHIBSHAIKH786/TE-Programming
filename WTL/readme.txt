@@ -1,1 +1,1 @@
-Assignments from Web Technologies Laboratory (WTL).
+Assignments from Web Technologies Laboratory.
